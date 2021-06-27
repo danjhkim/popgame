@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Smileys</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="score-block">
+		<p>You popped <span class="score">0</span> Smiley<span class="plural">s.</span></p>
+	</div>
+
+	<div class="total-shadow">
+		<div class="total-block">
+			<div class="total-wrapper win">
+				<h4>Congratulations!</h4>
+				<img src="images/sad-face.svg" alt="Winner" class="ending">
+				<h4>You popped all 100 Smileys!</h4>
+				<p>You won!</p>
+			</div>
+
+			<div class="total-wrapper lose">
+				<h4>Sorry!</h4>
+				<img src="images/happy.svg" alt="Loser" class="ending">
+				<h4>You popped <span class="score">0</span> Smiley<span class="plural">s.</span></h4>
+				<p>Play again?</p>
+				<button class="restart">Yes</button>
+				<button class="cancel">No</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="start-game-window">
+		<h2>Are you ready to start?</h2>
+		<h3>If you get 100 points you win!</h3>
+		<button class="start-game-button">Start</button>
+	</div>
+
+	<audio src="sounds/bg-music.wav" class="bg-music" loop controls></audio>
+
+	<script src="js/after.js"></script>
+</body>
+
+</html>
