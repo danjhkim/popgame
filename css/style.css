@@ -90,13 +90,75 @@ body {
 }
 
 .start-game-button {
-	width: 14vw;
-	height: 7vh;
-	font-size: 1em;
+	width: 13rem;
+	height: 5rem;
+	font-size: 0.8em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0.3rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1700px) {
 	.start-game-button {
-		height: 4vmin;
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.start-game-button {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.start-game-button {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.start-game-button {
+		font-size: 2rem;
+
+		width: 10rem;
+		height: 3rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.start-game-button {
+		font-size: 1.6rem;
+
+		width: 8rem;
+		height: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.start-game-button {
+		font-size: 1.3rem;
+
+		width: 6rem;
+		height: 2rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.start-game-button {
+		font-size: 1.1rem;
+
+		width: 4rem;
+		height: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 370px) {
+	.start-game-button {
+		font-size: 0.8rem;
+
+		width: 3.8rem;
+		height: 1.3rem;
 	}
 }
