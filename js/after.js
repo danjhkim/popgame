@@ -10,13 +10,15 @@ let gameOver = false;
 let totalShadow = document.querySelector('.total-shadow');
 let startBtn = document.querySelector('.start-game-button');
 let scoreBlock = document.querySelector('.score-block');
+let bodyWidth = document.body.clientWidth;
 
 function createBalloon() {
 	let div = document.createElement('div');
+	console.log(bodyWidth);
 	let rand = Math.floor(Math.random() * colors.length);
 	div.className = 'balloon balloon-' + colors[rand];
-	rand = rand = Math.floor(Math.random() * (windowWidth - 100));
-	div.style.left = rand + 'px';
+	rand = Math.floor(Math.random() * (bodyWidth - bodyWidth * 0.05));
+	div.style.right = rand + 'px';
 	div.dataset.number = currentBallon;
 	currentBallon++;
 	body.appendChild(div);
