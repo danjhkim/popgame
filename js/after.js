@@ -15,9 +15,8 @@ function createBalloon() {
 	let div = document.createElement('div');
 	let rand = Math.floor(Math.random() * colors.length);
 	div.className = 'balloon balloon-' + colors[rand];
-	rand =
-		Math.floor(Math.random() * (windowWidth - 200)) / (windowWidth / 100);
-	div.style.left = rand + 'vw';
+	rand = rand = Math.floor(Math.random() * (windowWidth - 100));
+	div.style.left = rand + 'px';
 	div.dataset.number = currentBallon;
 	currentBallon++;
 	body.appendChild(div);
